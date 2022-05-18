@@ -27,7 +27,7 @@ pipeline {
 	    stage('Build Docker Image') {
 		    steps {
 			     script {
-				     myimage = docker.build("raghukom/devops:${env.BUILD_ID}")
+				     myimage = docker.build("dvorugan/devops:${env.BUILD_ID}")
 				     
 				     //sh 'docker build -t raghukom/devops:latest .'
 			     }
